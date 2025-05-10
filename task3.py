@@ -6,3 +6,12 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+from itertools import count
+
+n = input().lower()
+dic = {}
+
+for i in range(len(n)):
+    dic[n[i]] = n.count(n[i])
+
+print(dic)
